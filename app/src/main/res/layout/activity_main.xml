@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfigurator Pizzy"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor: 00000000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Wybierz rozmiar:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mała 25 zł" />
+
+        <RadioButton
+            android:id="@+id/radioSrednia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Średnia 35 zł" />
+
+        <RadioButton
+            android:id="@+id/radioDuza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duża 45 zł" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkGrube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Grube ciasto (+5 zł)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Liczba sztuk:" />
+
+        <EditText
+            android:id="@+id/editSztuk"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:inputType="number"
+            android:text="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPodsumowanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PRZEJDŹ DO PODSUMOWANIA" />
+
+</LinearLayout>
